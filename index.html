@@ -4,23 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>GOt giphy finder</title>
   </head>
   <body>
+    <h1>Get Your Giphy😁</h1>
     <form>
-      <input type="text" id="input" name="value" required />
-      <input
-        type="radio"
-        id="character_name"
-        name="gameofthrons"
-        value="Name"
-      />
-      <label for="character_name">Name</label>
-      <input type="radio" id="house_name" name="gameofthrons" value="House" />
-      <label for="house_name">House</label>
-      <button type="submit" id="search_button">Find my goat!</button>
-      <output></output>
+      <label for="input">select or type your goat's name--> </label>
+      <label for="input"
+        >BTW if it's not in the list then it is probably not a goat</label
+      >
+      <input type="text" list="characters" name="value" required />
+      <datalist id="characters"> </datalist>
+      <label for="select"> so how mant GIFs do you want</label>
+      <select name="limit" id="limit">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <button type="submit" id="search_button">Find my goat! *^____^*</button>
+      <output name="output"></output>
     </form>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
